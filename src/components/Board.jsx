@@ -7,7 +7,11 @@ export const Board = ({ board, onClick }) => {
     <div className='board'>
       {board.map((value, idx) => {
         return (
-          <Box value={value} onClick={() => value === null && onClick(idx)} />
+          <Box
+            key={Math.random().toString(36).slice(2)}
+            value={value}
+            onClick={() => value === null && onClick(idx)}
+          />
         );
       })}
     </div>
