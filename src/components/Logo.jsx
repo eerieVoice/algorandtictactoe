@@ -1,5 +1,5 @@
 import React from 'react';
-import logoHeader from '../assets/logo.svg';
+import logoHeader from '../assets/logopo.png';
 
 import './styles/Logo.css';
 
