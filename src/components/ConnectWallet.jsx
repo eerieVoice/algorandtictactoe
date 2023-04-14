@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './ConnectWallet.css';
+import './styles/ConnectWallet.css';
 
 export const ConnectWallet = () => {
   return (

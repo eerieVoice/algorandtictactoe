@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Board } from './components/Board';
+import { Board } from './components/Board/Board';
 
 import './App.css';
-import { ScoreBoard } from './components/ScoreBoard';
+import { ScoreBoard } from './components/Board/ScoreBoard';
 import { ResetButton } from './components/ResetButton';
 import { ConnectWallet } from './components/ConnectWallet';
 import { Logo } from './components/Logo';

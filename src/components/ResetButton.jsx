@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './ResetButton.css';
+import './styles/ResetButton.css';
 
 export const ResetButton = ({ resetBoard }) => {
   return (

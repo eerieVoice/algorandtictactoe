@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './ScoreBoard.css';
+import '../styles/ScoreBoard.css';
 
 export const ScoreBoard = ({ scores, xPlaying }) => {
   const { xScore, oScore } = scores;
