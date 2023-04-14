@@ -1,0 +1,16 @@
+/* @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Play&family=Poppins:wght@300;400;500;700&family=Press+Start+2P&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@700&family=Play&family=Poppins:wght@300;400;500;700&family=Press+Start+2P&display=swap');
+
+* {
+  font-family: 'Fredoka', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url('../blob-scene-haikei.svg');
+  background-size: cover;
+}

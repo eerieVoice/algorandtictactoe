@@ -1,0 +1,25 @@
+.box {
+  background-color: white;
+  border: none;
+  border-radius: 10%;
+  box-shadow: 0px 0px 8px #888;
+  width: 7rem;
+  height: 7rem;
+  text-align: center;
+  font-size: 6em;
+  /* font-family: 'Play', sans-serif; */
+  font-weight: bold;
+
+  margin: 0.5rem;
+}
+
+.x {
+  color: rgb(16, 25, 32);
+}
+.o {
+  color: rgb(255, 231, 21);
+}
+
+.box:hover {
+  box-shadow: 0px 0px 15px #888;
+}
