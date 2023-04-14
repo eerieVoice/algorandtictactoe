@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Board } from './components/board';
+import { Board } from './components/Board';
 
 import './App.css';
 import { ScoreBoard } from './components/ScoreBoard';
