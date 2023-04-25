@@ -7,3 +7,8 @@
   border: none;
   text-align: center;
 }
+@media screen and (max-width: 414px) {
+  .logo {
+    width: 20rem;
+  }
+}
