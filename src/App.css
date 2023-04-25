@@ -13,7 +13,7 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-image: url('./assets/blob-scene-haikei.svg');
+  background: url('./assets/blob-scene-haikei.svg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
