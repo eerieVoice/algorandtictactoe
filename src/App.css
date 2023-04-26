@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Montserrat:wght@700&family=Play&family=Poppins:wght@300;400;500;700&family=Press+Start+2P&display=swap');
+
+* {
+  font-family: 'Fredoka', sans-serif;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* background-image: url('./assets/blob-scene-haikei.svg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+/* background-color: whitesmoke; */
+body {
+  margin: 0;
+  background: linear-gradient(-45deg, #facc15, #fef9c3, #44403c, #23d5ab);
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  50% {
+    background-position: 100% 50%;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    background-position: 0% 50%;
   }
 }
