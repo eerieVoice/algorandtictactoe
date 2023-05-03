@@ -27,6 +27,7 @@ function App() {
   // const [localCount, setLocalCount] = useState(null);
   const [accountAddress, setAccountAddress] = useState(null);
   const isConnectedToPeraWallet = !!accountAddress;
+  const [optedIn, setOptedIn] = useState(false);
 
   useEffect(() => {
     // Reconnect to the session when the component is mounted
@@ -92,7 +93,10 @@ function App() {
         // setCount1((prevCount1) => prevCount1 + 1);
         increaseScore('scorePlayer2');
       }
+
       console.log(`The is winner is ${winner}`);
+    } else {
+      increaseScore('noScorePlayer1');
     }
 
     // if (winner) {
@@ -133,7 +137,13 @@ function App() {
       {isConnectedToPeraWallet && (
         <ScoreBoard count1={count1} count2={count2} xPlaying={xPlaying} />
       )}
-      <button className='btn-wallet' onClick={() => optInToApp()}>
+      <button
+        className='btn-wallet'
+        onClick={() => {
+          setOptedIn(true);
+          optInToApp();
+        }}
+      >
         Opt-in
       </button>
 
@@ -147,7 +157,7 @@ function App() {
       >
         {isConnectedToPeraWallet ? 'Disconnect' : 'Connect to Pera Wallet'}
       </button>
-      {isConnectedToPeraWallet && (
+      {isConnectedToPeraWallet && optedIn && (
         <>
           <Board
             board={board}
